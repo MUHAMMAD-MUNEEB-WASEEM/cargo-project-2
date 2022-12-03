@@ -1,0 +1,150 @@
+
+
+.cont{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #080821;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.innerWrap{
+    height: 100vh;
+    width: 90%;
+    /* border: 1px solid white; */
+    display: flex;
+    
+}
+.innerLeft{
+ width: 50%;
+ /* background-color: red; */
+ height: 100%;
+ 
+}
+.innerLeft img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15vw;
+}
+.innerRight{
+    width: 50%;
+    background-color: #181C44;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:  3vw;
+   }
+
+   .heading1{
+    color: #F46300;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2vh 0;
+   }
+   .heading2{
+    color: #FFF;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 2vh 0;
+   }
+   .para{
+    color: #39A1FF;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 2vh 0;
+   }
+   .detailInner{
+    display: flex;
+    align-items: center;
+    padding: 1vh 0;
+    margin: 2vh 0;
+   }
+   .detailInner div{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 1vw;
+   }
+
+   .innerWrap1 {
+    display: none;
+   }
+
+@media screen and (max-width: 414px) {
+
+    .innerWrap{
+        display: none;
+    }
+
+    .innerWrap1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+    }
+
+    .innerTop{
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .innerLeft{
+        display: flex;
+    }
+
+    .innerLeft > img{
+        width: 150px !important;
+        height: 200px !important;
+        border-radius: 5vw;
+    }
+
+    .innerRight{
+        height: 65%;
+        background-color: transparent;
+        padding-left: 0;
+    }
+
+    .heading2{
+        font-size: 18px;
+    }
+
+    .para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 0 20px;
+        /* width: 100%; */
+    }
+
+    .details{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .detailInner{
+        margin-top: 30px;
+    }
+
+    .detailInner > img{
+        width: 40px;
+        height: 40px;
+    }
+    .detailInner > div{
+        font-size: 18px;
+    }
+
+    .innerLeft > img{
+        height: 40%;
+    }
+    
+
+    
+}
